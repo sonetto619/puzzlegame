@@ -47,28 +47,49 @@ APP.java                    程序入口
 README.md              项目说明
 
 运行环境
+
 - JDK 8 或更高版本
+
 - Windows、macOS 或 Linux
+
 - Java Swing
+
 编译和运行
+
 在项目根目录执行：
+
 javac -encoding UTF-8 -d out APP.java puzzlegame/ui/*.java
 java -cp out APP
+
 Windows PowerShell 也可以使用：
+
 javac -encoding UTF-8 -d out APP.java puzzlegame\ui\*.java
 java -cp out APP
+
 资源说明
+
 运行程序时必须保留 image 文件夹，其中包含：
+
 - background.png
+
 - image0.jpg
+
 - image1.jpg
+
 - image2.jpg
+
 - image3.jpg
+
 - victory.jpg
+
 - gongzhonghao.jpg
+
 测试
+
 java -ea -cp out puzzlegame.ui.LoginJFrameTest
 java -ea -cp out puzzlegame.ui.AssetLoaderTest
 java -ea -cp out puzzlegame.ui.GameJFrameImageTest
+
 说明
+
 注册功能目前用于页面流程演示，不会将用户名和密码保存到数据库。
